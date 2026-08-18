@@ -15,7 +15,17 @@ from openpyxl.utils import get_column_letter
 
 
 CANDIDATES = tuple("abcdefghi")
-
+CANDIDATE_NAMES = {
+    "a": "기획팀",
+    "b": "국외출장팀",
+    "c": "법제팀",
+    "d": "임수연",
+    "e": "전창민",
+    "f": "윤상은",
+    "g": "인력예산팀",
+    "h": "공공실태점검팀",
+    "i": "전략기획팀",
+}
 EVALUATOR_WEIGHTS = {
     "차관님": 0.3,
     "사무처장님": 0.2,
