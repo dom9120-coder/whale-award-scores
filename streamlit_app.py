@@ -244,7 +244,7 @@ if uploaded_file is not None:
             [
                 {
                     "순위": row["순위"],
-                    "피평가자": row["피평가자"],
+                    "피평가자": candidate_label(row["피평가자"]),,
                     "최종점수": round(float(row["최종점수"]), 3),
                 }
                 for row in summaries
