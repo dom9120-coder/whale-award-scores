@@ -234,7 +234,7 @@ if uploaded_file is not None:
         for column, label, row in zip(metric_columns, rank_labels, top_three):
             column.metric(
                 label=label,
-                value=str(row["피평가자"]),
+                value=candidate_label(row["피평가자"]),,
                 delta=f"{float(row['최종점수']):.3f}점",
                 delta_color="off",
             )
